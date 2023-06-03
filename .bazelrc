@@ -1,1 +1,4 @@
 build:windows --shell_executable="C:/Program Files/Git/usr/bin/bash.exe"
+
+build --aspects=//binplace_aspect:binplace_apect.bzl%binplace_aspect
+build --output_groups=+binplace

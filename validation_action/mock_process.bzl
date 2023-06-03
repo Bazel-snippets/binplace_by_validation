@@ -26,7 +26,7 @@ def _impl(ctx):
             progress_message = "Mock binplacing %s" % dst_file,
             use_default_shell_env = False,
         )
-        binplaced_files.append(dst_file)
+        binplaced_files.append(binplaced_file)
 
     return [
         DefaultInfo(files = depset(processd_files)),
